@@ -1,5 +1,6 @@
 package step_definations;
 
+import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
@@ -27,9 +28,9 @@ import org.testng.annotations.Test;
         toPDF = false,
         outputFolder = "target/81",
         retryCount = 0)
-@RunWith(ExtendedCucumber.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(features = { "src/test/resources/feature" },glue = {"step_definations"},
-        tags = {""},plugin = {
+        tags = {"@login"},plugin = {
         		"usage:target/81/cucumber-usage.json","html:target/81", "json:target/cucumber-reports/CucumberTestReport.json","json:target/81/cucumber.json",
                 "pretty:target/81/cucumber-pretty.txt",
                  "junit:target/81/cucumber-results.xml" })
