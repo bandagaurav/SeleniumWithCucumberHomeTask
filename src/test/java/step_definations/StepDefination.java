@@ -148,14 +148,14 @@ Response response;
 response=RestAssured.given().contentType(ContentType.JSON).queryParam("page",2).get("/api/users").thenReturn();
 Assert.assertEquals(response.statusCode(),HttpStatus.SC_OK);
 System.out.println("Get Request Output :"+response.getBody().asString());
-Hooks.scenario.write("Get Request Output :"+response.getBody().asString());
+//Hooks.scenario.write("Get Request Output :"+response.getBody().asString());
         CreateUserDTO createUserDTO=new CreateUserDTO();
         createUserDTO.setName("Gaurav");
         createUserDTO.setJob("Engineer");
         ObjectMapper objectMapper=new ObjectMapper();
 response=RestAssured.given().contentType(ContentType.JSON).body(objectMapper.writeValueAsString(createUserDTO)).post("/api/users").thenReturn();
         Assert.assertEquals(response.statusCode(),HttpStatus.SC_CREATED);
-        Hooks.scenario.write("Post Request Output :"+response.getBody().asString());
+        //Hooks.scenario.write("Post Request Output :"+response.getBody().asString());
 
 System.out.println("Post Request Output :"+response.getBody().asString());
 
@@ -164,7 +164,7 @@ System.out.println("Post Request Output :"+response.getBody().asString());
         createUserDTO.setJob("Engineer");
 response=RestAssured.given().contentType(ContentType.JSON).pathParams("id",2).body(objectMapper.writeValueAsString(createUserDTO)).put("/api/users/{id}").thenReturn();
         Assert.assertEquals(response.statusCode(),HttpStatus.SC_OK);
-        Hooks.scenario.write("Put Request Output :"+response.getBody().asString());
+        //Hooks.scenario.write("Put Request Output :"+response.getBody().asString());
 
         System.out.println("Put Request Output :"+response.getBody().asString());
 

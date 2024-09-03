@@ -1,4 +1,4 @@
-/*
+package step_definations;/*
 package step_definations;
 
 import io.cucumber.junit.Cucumber;
@@ -49,3 +49,16 @@ public class Run_Tests {
 }
 
 */
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features="src/test/resources/feature",
+        glue="step_definations",
+        monochrome = true,
+        tags= "@login"
+)
+public class Run_Tests {
+}
