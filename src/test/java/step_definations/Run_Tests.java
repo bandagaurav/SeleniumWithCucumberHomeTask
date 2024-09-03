@@ -29,7 +29,7 @@ import org.testng.annotations.Test;
         outputFolder = "target/81",
         retryCount = 0)
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/feature" },glue = {"step_definations"},
+@CucumberOptions(features = { "src/test/resources/feature" },
         tags = {"@login"},plugin = {
         		"usage:target/81/cucumber-usage.json","html:target/81", "json:target/cucumber-reports/CucumberTestReport.json","json:target/81/cucumber.json",
                 "pretty:target/81/cucumber-pretty.txt",
