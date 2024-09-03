@@ -1,0 +1,164 @@
+[
+  {
+    "source": "^User enters subject$",
+    "steps": [
+      {
+        "name": "User enters subject",
+        "aggregatedDurations": {
+          "average": 0.3848788,
+          "median": 0.3848788
+        },
+        "durations": [
+          {
+            "duration": 0.3848788,
+            "location": "incubyte.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters message body$",
+    "steps": [
+      {
+        "name": "User enters message body",
+        "aggregatedDurations": {
+          "average": 0.3545379,
+          "median": 0.3545379
+        },
+        "durations": [
+          {
+            "duration": 0.3545379,
+            "location": "incubyte.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters Password$",
+    "steps": [
+      {
+        "name": "User enters Password",
+        "aggregatedDurations": {
+          "average": 0.3206206,
+          "median": 0.3206206
+        },
+        "durations": [
+          {
+            "duration": 0.3206206,
+            "location": "incubyte.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User Clicks on login button$",
+    "steps": [
+      {
+        "name": "User Clicks on login button",
+        "aggregatedDurations": {
+          "average": 0.0841203,
+          "median": 0.0841203
+        },
+        "durations": [
+          {
+            "duration": 0.0841203,
+            "location": "incubyte.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters Username$",
+    "steps": [
+      {
+        "name": "User enters Username",
+        "aggregatedDurations": {
+          "average": 10.7753714,
+          "median": 10.7753714
+        },
+        "durations": [
+          {
+            "duration": 10.7753714,
+            "location": "incubyte.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters email address$",
+    "steps": [
+      {
+        "name": "User enters email address",
+        "aggregatedDurations": {
+          "average": 0.3449701,
+          "median": 0.3449701
+        },
+        "durations": [
+          {
+            "duration": 0.3449701,
+            "location": "incubyte.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on compose tab$",
+    "steps": [
+      {
+        "name": "User clicks on compose tab",
+        "aggregatedDurations": {
+          "average": 11.6305898,
+          "median": 11.6305898
+        },
+        "durations": [
+          {
+            "duration": 11.6305898,
+            "location": "incubyte.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on send button$",
+    "steps": [
+      {
+        "name": "User clicks on send button",
+        "aggregatedDurations": {
+          "average": 0.1229605,
+          "median": 0.1229605
+        },
+        "durations": [
+          {
+            "duration": 0.1229605,
+            "location": "incubyte.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User validates message sent$",
+    "steps": [
+      {
+        "name": "User validates message sent",
+        "aggregatedDurations": {
+          "average": 10.0754758,
+          "median": 10.0754758
+        },
+        "durations": [
+          {
+            "duration": 10.0754758,
+            "location": "incubyte.feature:14"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="38.873281">
+    <testcase classname="Email Action" name="Successful Sending Email with Valid Credentials" time="38.873281">
+        <system-out>
+            <![CDATA[Given User enters Username..................................................passed
+And User enters Password....................................................passed
+And User Clicks on login button.............................................passed
+Given User clicks on compose tab............................................passed
+When User enters email address..............................................passed
+And User enters subject.....................................................passed
+And User enters message body................................................passed
+Then User clicks on send button.............................................passed
+And User validates message sent.............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

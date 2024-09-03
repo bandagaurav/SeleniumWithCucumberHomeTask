@@ -1,0 +1,15 @@
+Feature: Email Action
+
+  Background: User is on Home Page  [90m# incubyte.feature:3[0m
+    [32mGiven [0m[32mUser enters Username[0m      [90m# StepDefination.user_enters_Username()[0m
+    [32mAnd [0m[32mUser enters Password[0m        [90m# StepDefination.user_enters_Password()[0m
+    [32mAnd [0m[32mUser Clicks on login button[0m [90m# StepDefination.user_Clicks_on_login_button()[0m
+
+  @login
+  Scenario: Successful Sending Email with Valid Credentials [90m# incubyte.feature:8[0m
+    [32mGiven [0m[32mUser clicks on compose tab[0m                        [90m# StepDefination.user_clicks_on_compose_tab()[0m
+    [32mWhen [0m[32mUser enters email address[0m                          [90m# StepDefination.user_enters_email_address()[0m
+    [32mAnd [0m[32mUser enters subject[0m                                 [90m# StepDefination.user_enters_subject()[0m
+    [32mAnd [0m[32mUser enters message body[0m                            [90m# StepDefination.user_enters_message_body()[0m
+    [32mThen [0m[32mUser clicks on send button[0m                         [90m# StepDefination.user_clicks_on_send_button()[0m
+    [32mAnd [0m[32mUser validates message sent[0m                         [90m# StepDefination.user_validates_message_sent()[0m
