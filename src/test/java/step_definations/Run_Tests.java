@@ -1,5 +1,6 @@
 package step_definations;
 
+import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
@@ -15,7 +16,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 
-@ExtendedCucumberOptions(
+/*@ExtendedCucumberOptions(
         jsonReport = "target/81/cucumber.json",
         jsonUsageReport = "target/81/cucumber-usage.json",
         usageReport = true,
@@ -26,8 +27,8 @@ import org.testng.annotations.Test;
         pdfPageSize = "A4 Landscape",
         toPDF = false,
         outputFolder = "target/81",
-        retryCount = 0)
-@RunWith(ExtendedCucumber.class)
+        retryCount = 0)*/
+@RunWith(Cucumber.class)
 @CucumberOptions(features = { "src/test/resources/feature" },
         tags = {"@login"},plugin = {
         		"usage:target/81/cucumber-usage.json","html:target/81", "json:target/cucumber-reports/CucumberTestReport.json","json:target/81/cucumber.json",
@@ -40,9 +41,9 @@ public class Run_Tests {
 	public static int retries = 0;
     public Run_Tests() {
     }
-    @RetryAcceptance
+    /*@RetryAcceptance
     public static boolean retryCheck(Throwable e) {
         return true;
-    }
+    }*/
 }
 
