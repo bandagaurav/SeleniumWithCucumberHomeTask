@@ -144,17 +144,30 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>8.2.2.jre13</version>
         </dependency>
+        <!-- Cucumber Java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>6.10.4</version>
+            <version>7.2.3</version> <!-- Use the latest version available -->
         </dependency>
+
+        <!-- Cucumber JUnit for JUnit integration -->
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.5</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.2.3</version> <!-- Use the latest version available -->
             <scope>test</scope>
         </dependency>
+
+        <!-- Additional Dependencies (if required) -->
+        <!-- Cucumber PicoContainer for Dependency Injection -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.2.3</version> <!-- Use the latest version available -->
+            <scope>test</scope>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -174,12 +187,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
+
 
         <!--added-->
         <dependency>
@@ -407,12 +415,7 @@
             <artifactId>cucumber-reporting</artifactId>
             <version>5.7.7</version>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>6.11.0</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
