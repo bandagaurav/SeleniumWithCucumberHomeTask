@@ -2,9 +2,10 @@ package step_definations;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import cucumber.api.Scenario;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
