@@ -22,12 +22,8 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>2.3.6</version> <!-- Replace with the last known stable version -->
         </dependency>
+        <!-- XStream -->
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>7.2.3</version>
-            <scope>test</scope>
-        </dependency>        <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
             <version>1.4.19</version> <!-- Verify for latest version on Maven Central -->
@@ -178,7 +174,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
 
         <!--added-->
         <dependency>
